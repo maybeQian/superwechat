@@ -7,117 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdc23f4f-10df-4fc9-8ef1-8333ead042fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hyphenatechat_3_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/redpacket_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/superwechat.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/redpacket_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/BaiduLBS_Android.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/HwPush_SDK_V2705_nomap.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/MiPush_SDK_Client_2_2_19.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/alipaySdk_20160516.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/bolts_tasks_1_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/glide_3_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/google_play_services.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hyphenatechat_3_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/multidex_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/multidex_instrumentation_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_http_legacy.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/parse_android_1_13_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/redpacket_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/umeng_analytics_v5_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/umeng_update_v2_6_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/volley_1_0_19.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../easeui/EaseUI.iml" afterPath="$PROJECT_DIR$/../easeui/EaseUI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/BaiduLBS_Android.xml" afterPath="$PROJECT_DIR$/.idea/libraries/BaiduLBS_Android.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/HwPush_SDK_V2705_nomap.xml" afterPath="$PROJECT_DIR$/.idea/libraries/HwPush_SDK_V2705_nomap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/MiPush_SDK_Client_2_2_19.xml" afterPath="$PROJECT_DIR$/.idea/libraries/MiPush_SDK_Client_2_2_19.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/alipaySdk_20160516.xml" afterPath="$PROJECT_DIR$/.idea/libraries/alipaySdk_20160516.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/bolts_tasks_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/bolts_tasks_1_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/glide_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/glide_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/google_play_services.xml" afterPath="$PROJECT_DIR$/.idea/libraries/google_play_services.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/multidex_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/multidex_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/multidex_instrumentation_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/multidex_instrumentation_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_http_legacy.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_http_legacy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/parse_android_1_13_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/parse_android_1_13_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/umeng_analytics_v5_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/umeng_analytics_v5_2_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/umeng_update_v2_6_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/umeng_update_v2_6_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/volley_1_0_19.xml" afterPath="$PROJECT_DIR$/.idea/libraries/volley_1_0_19.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redpacketlibrary/redpacketlibrary.iml" afterPath="$PROJECT_DIR$/redpacketlibrary/redpacketlibrary.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/em_activity_video_call.xml" afterPath="$PROJECT_DIR$/res/layout/em_activity_video_call.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/em_activity_voice_call.xml" afterPath="$PROJECT_DIR$/res/layout/em_activity_voice_call.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/em_choose_griditem.xml" afterPath="$PROJECT_DIR$/res/layout/em_choose_griditem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/em_contacts_header.xml" afterPath="$PROJECT_DIR$/res/layout/em_contacts_header.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/Constant.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/Constant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/DemoApplication.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/DemoApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/DemoHelper.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/DemoHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/DemoModel.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/DemoModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/adapter/ChatRoomAdapter.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/ChatRoomAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/adapter/GroupAdapter.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/GroupAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/adapter/NewFriendsMsgAdapter.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/NewFriendsMsgAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/db/DbOpenHelper.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/DbOpenHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/db/DemoDBManager.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/DemoDBManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/db/InviteMessgeDao.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/InviteMessgeDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/db/UserDao.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/db/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/domain/EmojiconExampleGroupData.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/domain/EmojiconExampleGroupData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/domain/InviteMessage.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/domain/InviteMessage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/domain/RobotUser.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/domain/RobotUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/domain/VideoEntity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/domain/VideoEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/parse/ParseManager.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/parse/ParseManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/parse/UserProfileManager.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/parse/UserProfileManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/receiver/CallReceiver.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/receiver/CallReceiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/receiver/GCMPushBroadCast.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/receiver/GCMPushBroadCast.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/receiver/StartServiceReceiver.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/receiver/StartServiceReceiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/runtimepermissions/Permissions.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/runtimepermissions/Permissions.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/runtimepermissions/PermissionsManager.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/runtimepermissions/PermissionsManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/runtimepermissions/PermissionsResultAction.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/runtimepermissions/PermissionsResultAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/AddContactActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/AddContactActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/BaseActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/BaseActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/BlacklistActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/BlacklistActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/CallActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/CallActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/CallOptionActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/CallOptionActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ChatActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ChatActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ChatFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ChatFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ChatRoomDetailsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ChatRoomDetailsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ContactListFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ContactListFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ContextMenuActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ContextMenuActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ConversationListFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ConversationListFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/DiagnoseActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/DiagnoseActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/EditActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/EditActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ExitGroupDialog.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ExitGroupDialog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ForwardMessageActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ForwardMessageActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/GroupBlacklistActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GroupBlacklistActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/GroupDetailsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GroupDetailsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/GroupPickContactsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GroupPickContactsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/GroupSearchMessageActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GroupSearchMessageActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/GroupSimpleDetailActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GroupSimpleDetailActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/GroupsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/GroupsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ImageGridActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ImageGridActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/ImageGridFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/ImageGridFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/LoginActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/LoginActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/NewFriendsMsgActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/NewFriendsMsgActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/NewGroupActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/NewGroupActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/OfflinePushNickActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/OfflinePushNickActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/OfflinePushSettingsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/OfflinePushSettingsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/PickAtUserActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/PickAtUserActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/PickContactNoCheckboxActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/PickContactNoCheckboxActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/PublicChatRoomsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/PublicChatRoomsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/PublicGroupsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/PublicGroupsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/PublicGroupsSeachActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/PublicGroupsSeachActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/RecorderVideoActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/RecorderVideoActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/RegisterActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/RegisterActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/RobotsActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/RobotsActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/SetServersActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SetServersActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/SettingsFragment.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SettingsFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/SplashActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/SplashActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/UserProfileActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/VideoCallActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/VideoCallActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/ui/VoiceCallActivity.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/VoiceCallActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/utils/PreferenceManager.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/utils/PreferenceManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/video/util/ImageCache.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/ImageCache.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/video/util/ImageResizer.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/ImageResizer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/video/util/ImageWorker.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/ImageWorker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/video/util/RecyclingBitmapDrawable.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/RecyclingBitmapDrawable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/video/util/Utils.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/Utils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/widget/ChatRowVoiceCall.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/widget/ChatRowVoiceCall.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/widget/ContactItemView.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/widget/ContactItemView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/widget/MyChronometer.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/widget/MyChronometer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hyphenate/chatuidemo/widget/RecyclingImageView.java" afterPath="$PROJECT_DIR$/src/cn/ucai/superwechat/widget/RecyclingImageView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/em_context_menu_item_bg.xml" afterPath="$PROJECT_DIR$/res/drawable/em_context_menu_item_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/em_strings.xml" afterPath="$PROJECT_DIR$/res/values/em_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/superwechat.iml" afterPath="$PROJECT_DIR$/superwechat.iml" />
     </list>
     <ignored path="superwechat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -150,34 +64,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VideoCallActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/VideoCallActivity.java">
+      <file leaf-file-name="em_strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/em_strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="44" column="29" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="29" />
+            <state relative-caret-position="76">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/GroupAdapter.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="1216">
+              <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecyclingBitmapDrawable.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/RecyclingBitmapDrawable.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="em_strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-zh/em_strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -904,6 +839,11 @@
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:24.1.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportV42411Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from root project 'superwechat' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
@@ -1358,6 +1298,11 @@
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:24.1.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2411Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="testDebugUnitTest" />
@@ -1392,6 +1337,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:24.1.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1464,6 +1414,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:24.1.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -2185,7 +2140,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="F:\androidCode\superwechat\superwechat" value="5935496365268" />
+        <entry key="F:\androidCode\superwechat\superwechat" value="5935497903516" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2536,8 +2491,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/ChatRoomAdapter.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/DemoHelper.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/domain/EmojiconExampleGroupData.java" />
@@ -2586,12 +2539,14 @@
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/ui/UserProfileActivity.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/GroupAdapter.java" />
         <option value="$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/RecyclingBitmapDrawable.java" />
+        <option value="$PROJECT_DIR$/res/values/em_strings.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="378" />
-    <option name="y" value="6" />
+    <option name="x" value="381" />
     <option name="width" value="1223" />
     <option name="height" value="860" />
   </component>
@@ -2631,10 +2586,6 @@
               <option name="myItemId" value="superwechat" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2644,38 +2595,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="superwechat" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="superwechat" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="superwechat" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cn" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ucai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="superwechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="superwechat" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2689,6 +2608,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="device.picker.selection" value="Nexus_5X_API_23" />
+    <property name="android.project.structure.last.selected" value="superwechat" />
+    <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -2926,7 +2848,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="superwechat" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration default="false" name="superwechat" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="superwechat" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -3001,7 +2923,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="378" y="6" width="1223" height="860" extended-state="0" />
+    <frame x="381" y="0" width="1223" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -3053,73 +2975,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/adapter/ChatRoomAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#1461#1524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/DemoHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/domain/EmojiconExampleGroupData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <element signature="e#2085#2177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/AddContactActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="e#1643#1688#0" expanded="true" />
-            <element signature="e#1742#1786#0" expanded="true" />
-            <element signature="e#2188#2221#0" expanded="true" />
-            <element signature="e#2330#2362#0" expanded="true" />
-            <element signature="e#2805#2828#0" expanded="true" />
-            <element signature="e#3166#3202#0" expanded="true" />
-            <element signature="e#3267#3308#0" expanded="true" />
-            <element signature="e#3397#3452#0" expanded="true" />
-            <element signature="e#3731#3778#0" expanded="true" />
-            <element signature="e#3969#4019#0" expanded="true" />
-            <element signature="e#4264#4324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/ui/BlacklistActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -3136,20 +2991,20 @@
         <state relative-caret-position="147">
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
-            <element signature="e#6375#6433#0" expanded="true" />
-            <element signature="e#6558#6627#0" expanded="true" />
-            <element signature="e#6755#6807#0" expanded="true" />
-            <element signature="e#6927#6987#0" expanded="true" />
-            <element signature="e#7111#7184#0" expanded="true" />
-            <element signature="e#13198#13246#0" expanded="true" />
-            <element signature="e#13269#13311#0" expanded="true" />
-            <element signature="e#13334#13399#0" expanded="true" />
-            <element signature="e#13422#13480#0" expanded="true" />
-            <element signature="e#13503#13563#0" expanded="true" />
-            <element signature="e#13586#13651#0" expanded="true" />
-            <element signature="e#13674#13723#0" expanded="true" />
-            <element signature="e#13746#13799#0" expanded="true" />
-            <element signature="e#14569#14614#0" expanded="true" />
+            <element signature="e#6375#6433#0" expanded="false" />
+            <element signature="e#6558#6627#0" expanded="false" />
+            <element signature="e#6755#6807#0" expanded="false" />
+            <element signature="e#6927#6987#0" expanded="false" />
+            <element signature="e#7111#7184#0" expanded="false" />
+            <element signature="e#13198#13246#0" expanded="false" />
+            <element signature="e#13269#13311#0" expanded="false" />
+            <element signature="e#13334#13399#0" expanded="false" />
+            <element signature="e#13422#13480#0" expanded="false" />
+            <element signature="e#13503#13563#0" expanded="false" />
+            <element signature="e#13586#13651#0" expanded="false" />
+            <element signature="e#13674#13723#0" expanded="false" />
+            <element signature="e#13746#13799#0" expanded="false" />
+            <element signature="e#14569#14614#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3193,21 +3048,21 @@
         <state relative-caret-position="147">
           <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
-            <element signature="e#2480#2521#0" expanded="true" />
-            <element signature="e#3986#4030#0" expanded="true" />
-            <element signature="e#5223#5269#0" expanded="true" />
-            <element signature="e#5286#5343#0" expanded="true" />
-            <element signature="e#5360#5418#0" expanded="true" />
-            <element signature="e#5435#5493#0" expanded="true" />
-            <element signature="e#5510#5569#0" expanded="true" />
-            <element signature="e#5592#5659#0" expanded="true" />
-            <element signature="e#5682#5752#0" expanded="true" />
-            <element signature="e#5769#5827#0" expanded="true" />
-            <element signature="e#5850#5904#0" expanded="true" />
-            <element signature="e#5936#5998#0" expanded="true" />
-            <element signature="e#6690#6732#0" expanded="true" />
-            <element signature="e#7078#7105#0" expanded="true" />
-            <element signature="e#9144#9197#0" expanded="true" />
+            <element signature="e#2480#2521#0" expanded="false" />
+            <element signature="e#3986#4030#0" expanded="false" />
+            <element signature="e#5223#5269#0" expanded="false" />
+            <element signature="e#5286#5343#0" expanded="false" />
+            <element signature="e#5360#5418#0" expanded="false" />
+            <element signature="e#5435#5493#0" expanded="false" />
+            <element signature="e#5510#5569#0" expanded="false" />
+            <element signature="e#5592#5659#0" expanded="false" />
+            <element signature="e#5682#5752#0" expanded="false" />
+            <element signature="e#5769#5827#0" expanded="false" />
+            <element signature="e#5850#5904#0" expanded="false" />
+            <element signature="e#5936#5998#0" expanded="false" />
+            <element signature="e#6690#6732#0" expanded="false" />
+            <element signature="e#7078#7105#0" expanded="false" />
+            <element signature="e#9144#9197#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3684,12 +3539,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/ucai/superwechat/video/util/RecyclingBitmapDrawable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/em_strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24364">
+          <caret line="2391" column="0" selection-start-line="2391" selection-start-column="0" selection-end-line="2391" selection-end-column="0" />
+          <folding>
+            <marker date="1486472009547" expanded="true" signature="49:216085" ph="..." />
+            <marker date="1486472009547" expanded="true" signature="87:523" ph="..." />
+            <marker date="1486472009547" expanded="true" signature="564:1014" ph="..." />
+            <marker date="1486472009547" expanded="true" signature="1050:1217" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-zh/em_strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
   </component>
