@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hyphenatechat_3.2.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../easeui/libs/hyphenatechat_3.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
