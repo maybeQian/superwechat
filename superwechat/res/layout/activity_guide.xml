@@ -9,7 +9,7 @@
         android:layout_width="190px"
         android:layout_height="190px"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150px"
+        android:layout_marginTop="150dp"
         android:src="@drawable/icon_logo" />
     <Button
         android:id="@+id/btn_login"

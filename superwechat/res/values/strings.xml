@@ -104,4 +104,5 @@
     <string name="setting_txt_about">关于微信</string>
     <string name="setting_btn_exit">退出登录</string>
     <string name="msg_1">msg_1</string>
+    <string name="User_nick_cannot_be_empty">用户昵称不能为空</string>
 </resources>
