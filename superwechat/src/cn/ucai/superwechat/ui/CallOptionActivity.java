@@ -31,7 +31,7 @@ public class CallOptionActivity extends BaseActivity implements View.OnClickList
         super.onCreate(arg0);
         setContentView(R.layout.em_activity_call_option);
 
-        // EMClient.getInstance().callManager().getOptions().xxx set initial values resident at DemoHelper
+        // EMClient.getInstance().callManager().getOptions().xxx set initial values resident at SuperWeChatHelper
 
         // min video kbps
         EditText editMinBitRate = (EditText)findViewById(R.id.edit_min_bit_rate);
