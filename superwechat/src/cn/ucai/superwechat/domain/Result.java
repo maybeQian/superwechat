@@ -1,4 +1,4 @@
-package cn.ucai.superwechat.bean;
+package cn.ucai.superwechat.domain;
 
 import java.io.Serializable;
 
