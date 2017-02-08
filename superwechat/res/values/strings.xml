@@ -103,4 +103,5 @@
     <string name="setting_txt_tongyong">通用</string>
     <string name="setting_txt_about">关于微信</string>
     <string name="setting_btn_exit">退出登录</string>
+    <string name="msg_1">msg_1</string>
 </resources>
