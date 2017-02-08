@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/iv_splash_logo"
+        android:layout_width="190px"
+        android:layout_height="190px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:src="@drawable/icon_logo" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:text="@string/login"
+        android:background="@color/bg_btn_login"
+        />
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:text="@string/register"
+        android:background="@color/bg_btn_register"
+        />
+
+</RelativeLayout>

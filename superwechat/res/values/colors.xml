@@ -25,4 +25,7 @@
     <color name="tab_def_selected_color">#ffff7800</color>
     <color name="tab_top_title_normal_color">#ffffffff</color>
     <color name="tab_top_title_selected_color">#ffff7800</color>
+
+    <color name="bg_btn_login">#459F3F</color>
+    <color name="bg_btn_register">#C7C7C7</color>
 </resources>
