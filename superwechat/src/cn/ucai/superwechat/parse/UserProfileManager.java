@@ -176,7 +176,12 @@ public class UserProfileManager {
 						if (result.isRetMsg()) {
 							L.e("UerProfileManager","asyncGetCurrentUserInfo,result="+result);
 							User user= (User) result.getRetData();
-							setCurrentUserNick(user.getMUserNick());
+							if (user != null) {
+								//save user info to db
+								SuperWeChatHelper.getInstance().saveAppContact(user);
+								setCurrentUserNick(user.getMUserNick());
+								setCurrentUserAvatar(user.getAvatar());
+							}
 						}
 					}
 				}

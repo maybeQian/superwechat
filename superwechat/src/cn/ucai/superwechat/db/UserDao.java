@@ -105,6 +105,8 @@ public class UserDao {
         SuperWeChatDBManager.getInstance().saveAppContact(user);
     }
 
+
+
     public void setDisabledGroups(List<String> groups) {
         SuperWeChatDBManager.getInstance().setDisabledGroups(groups);
     }
