@@ -88,6 +88,66 @@ public class MainActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		savePower();
+		checkAccount(savedInstanceState);
+
+		setContentView(R.layout.em_activity_main);
+		// runtime permission for android 6.0, just require all permissions here for simple
+		requestPermissions();
+
+		initView();
+		initUmeng();
+
+
+		showExceptionDialogFromIntent(getIntent());
+
+		inviteMessgeDao = new InviteMessgeDao(this);
+		UserDao userDao = new UserDao(this);
+		initFragment();
+
+		//register broadcast receiver to receive the change of group from SuperWeChatHelper
+		registerBroadcastReceiver();
+		
+		
+		EMClient.getInstance().contactManager().setContactListener(new MyContactListener());
+		//debug purpose only
+        registerInternalDebugReceiver();
+	}
+
+	private void initFragment() {
+		conversationListFragment = new ConversationListFragment();
+		contactListFragment = new ContactListFragment();
+		SettingsFragment settingFragment = new SettingsFragment();
+		fragments = new Fragment[] { conversationListFragment, contactListFragment, settingFragment};
+
+//		getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, conversationListFragment)
+//				.add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(conversationListFragment)
+//				.commit();
+	}
+
+	private void initUmeng() {
+		//umeng api
+		MobclickAgent.updateOnlineConfig(this);
+		UmengUpdateAgent.setUpdateOnlyWifi(false);
+		UmengUpdateAgent.update(this);
+	}
+
+	private boolean checkAccount(Bundle savedInstanceState) {
+		//make sure activity will not in background if user is logged into another device or removed
+		if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
+		    SuperWeChatHelper.getInstance().logout(false,null);
+			finish();
+			startActivity(new Intent(this, LoginActivity.class));
+			return true;
+		} else if (savedInstanceState != null && savedInstanceState.getBoolean("isConflict", false)) {
+			finish();
+			startActivity(new Intent(this, LoginActivity.class));
+			return true;
+		}
+		return false;
+	}
+
+	private void savePower() {
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 		    String packageName = getPackageName();
 		    PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
@@ -98,49 +158,6 @@ public class MainActivity extends BaseActivity {
 		        startActivity(intent);
 		    }
 		}
-		
-		//make sure activity will not in background if user is logged into another device or removed
-		if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
-		    SuperWeChatHelper.getInstance().logout(false,null);
-			finish();
-			startActivity(new Intent(this, LoginActivity.class));
-			return;
-		} else if (savedInstanceState != null && savedInstanceState.getBoolean("isConflict", false)) {
-			finish();
-			startActivity(new Intent(this, LoginActivity.class));
-			return;
-		}
-		setContentView(R.layout.em_activity_main);
-		// runtime permission for android 6.0, just require all permissions here for simple
-		requestPermissions();
-
-		initView();
-
-		//umeng api
-		MobclickAgent.updateOnlineConfig(this);
-		UmengUpdateAgent.setUpdateOnlyWifi(false);
-		UmengUpdateAgent.update(this);
-
-		showExceptionDialogFromIntent(getIntent());
-
-		inviteMessgeDao = new InviteMessgeDao(this);
-		UserDao userDao = new UserDao(this);
-		conversationListFragment = new ConversationListFragment();
-		contactListFragment = new ContactListFragment();
-		SettingsFragment settingFragment = new SettingsFragment();
-		fragments = new Fragment[] { conversationListFragment, contactListFragment, settingFragment};
-
-		getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, conversationListFragment)
-				.add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(conversationListFragment)
-				.commit();
-
-		//register broadcast receiver to receive the change of group from SuperWeChatHelper
-		registerBroadcastReceiver();
-		
-		
-		EMClient.getInstance().contactManager().setContactListener(new MyContactListener());
-		//debug purpose only
-        registerInternalDebugReceiver();
 	}
 
 	@TargetApi(23)
@@ -162,12 +179,12 @@ public class MainActivity extends BaseActivity {
 	 * init views
 	 */
 	private void initView() {
-		unreadLabel = (TextView) findViewById(R.id.unread_msg_number);
-		unreadAddressLable = (TextView) findViewById(R.id.unread_address_number);
-		mTabs = new Button[3];
-		mTabs[0] = (Button) findViewById(R.id.btn_conversation);
-		mTabs[1] = (Button) findViewById(R.id.btn_address_list);
-		mTabs[2] = (Button) findViewById(R.id.btn_setting);
+//		unreadLabel = (TextView) findViewById(R.id.unread_msg_number);
+//		unreadAddressLable = (TextView) findViewById(R.id.unread_address_number);
+//		mTabs = new Button[3];
+//		mTabs[0] = (Button) findViewById(R.id.btn_conversation);
+//		mTabs[1] = (Button) findViewById(R.id.btn_address_list);
+//		mTabs[2] = (Button) findViewById(R.id.btn_setting);
 		// select first tab
 		mTabs[0].setSelected(true);
 	}
@@ -179,22 +196,22 @@ public class MainActivity extends BaseActivity {
 	 */
 	public void onTabClicked(View view) {
 		switch (view.getId()) {
-		case R.id.btn_conversation:
-			index = 0;
-			break;
-		case R.id.btn_address_list:
-			index = 1;
-			break;
-		case R.id.btn_setting:
-			index = 2;
-			break;
+//		case R.id.btn_conversation:
+//			index = 0;
+//			break;
+//		case R.id.btn_address_list:
+//			index = 1;
+//			break;
+//		case R.id.btn_setting:
+//			index = 2;
+//			break;
 		}
 		if (currentTabIndex != index) {
 			FragmentTransaction trx = getSupportFragmentManager().beginTransaction();
 			trx.hide(fragments[currentTabIndex]);
-			if (!fragments[index].isAdded()) {
-				trx.add(R.id.fragment_container, fragments[index]);
-			}
+//			if (!fragments[index].isAdded()) {
+//				trx.add(R.id.fragment_container, fragments[index]);
+//			}
 			trx.show(fragments[index]).commit();
 		}
 		mTabs[currentTabIndex].setSelected(false);

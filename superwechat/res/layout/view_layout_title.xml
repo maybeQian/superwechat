@@ -21,6 +21,7 @@
         android:layout_centerVertical="true"
         android:contentDescription="@string/app_name_wx"
         android:src="@drawable/icon_back"
+        android:visibility="gone"
         />
 
     <TextView
