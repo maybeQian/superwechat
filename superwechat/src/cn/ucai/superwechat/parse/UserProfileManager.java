@@ -148,14 +148,14 @@ public class UserProfileManager {
 		return avatarUrl;
 	}
 
-	public void asyncGetCurrentUserInfo(Activity activity) {
+	public void asyncGetCurrentUserInfo(final Activity activity) {
 		ParseManager.getInstance().asyncGetCurrentUserInfo(new EMValueCallBack<EaseUser>() {
 
 			@Override
 			public void onSuccess(EaseUser value) {
 			    if(value != null){
-    				setCurrentUserNick(value.getNick());
-    				setCurrentUserAvatar(value.getAvatar());
+//    				setCurrentUserNick(value.getNick());
+//    				setCurrentUserAvatar(value.getAvatar());
 			    }
 			}
 
@@ -175,6 +175,8 @@ public class UserProfileManager {
 					if (result != null) {
 						if (result.isRetMsg()) {
 							L.e("UerProfileManager","asyncGetCurrentUserInfo,result="+result);
+							User user= (User) result.getRetData();
+							setCurrentUserNick(user.getMUserNick());
 						}
 					}
 				}
