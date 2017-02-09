@@ -1021,6 +1021,15 @@ public class SuperWeChatHelper {
          superWeChatModel.saveContactList(mList);
     }
 
+    public void updateAppContactList(List<User> contactInfoList) {
+         for (User u : contactInfoList) {
+            appContactList.put(u.getMUserName(), u);
+         }
+         ArrayList<User> mList = new ArrayList<>();
+         mList.addAll(appContactList.values());
+         superWeChatModel.saveAppContactList(mList);
+    }
+
 	public UserProfileManager getUserProfileManager() {
 		if (userProManager == null) {
 			userProManager = new UserProfileManager();
@@ -1320,6 +1329,7 @@ public class SuperWeChatHelper {
         isGroupAndContactListenerRegisted = false;
         
         setContactList(null);
+        setAppContactList(null);
         setRobotList(null);
         getUserProfileManager().reset();
         SuperWeChatDBManager.getInstance().closeDB();
