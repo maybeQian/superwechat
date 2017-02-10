@@ -75,12 +75,14 @@ dependencies {
     //    compile ('com.anthonycr.grant:permissions:1.0'){
     //        exclude module: 'support-v4'
     //    }
+
+
     compile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.jakewharton:butterknife:8.4.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'com.squareup.okio:okio:1.10.0'
     compile 'com.squareup.okhttp3:okhttp-urlconnection:3.4.1'
     compile 'com.google.code.gson:gson:2.7'
-
+    compile 'com.android.support:support-v4:24.1.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }

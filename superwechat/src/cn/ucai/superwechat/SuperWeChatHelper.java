@@ -64,6 +64,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import static com.hyphenate.easeui.utils.EaseUserUtils.getAppUserInfo;
+
 public class SuperWeChatHelper {
     /**
      * data sync listener
@@ -266,6 +268,11 @@ public class SuperWeChatHelper {
             @Override
             public EaseUser getUser(String username) {
                 return getUserInfo(username);
+            }
+
+            @Override
+            public User getAppUser(String username) {
+                return getAppUserInfo(username);
             }
         });
 
@@ -767,7 +774,21 @@ public class SuperWeChatHelper {
         }
         return user;
 	}
-	
+
+
+	private User getAppUserInfo(String username){
+		// To get instance of EaseUser, here we get it from the user list in memory
+		// You'd better cache it if you get it from your server
+        User user = null;
+
+        // if user is not in your contacts, set inital letter for him/her
+        if(user == null){
+            user = new User(username);
+            EaseCommonUtils.setUserInitialLetter(user);
+        }
+        return user;
+	}
+
 	 /**
      * Global listener
      * If this event already handled by an activity, you don't need handle it again

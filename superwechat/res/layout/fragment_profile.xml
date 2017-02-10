@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_private_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/default_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_userNick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:text="昵称"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_userNick"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:text="微信号"
+                    android:textSize="18sp"
+                    android:textColor="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/qrcode" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_album"
+                    style="@style/list_txt_Style"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/icon_me_photo"
+                    android:text="@string/profile_txt_album" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/black3" />
+
+
+                <TextView
+                    android:id="@+id/txt_collect"
+                    style="@style/list_txt_Style"
+                    android:drawableLeft="@drawable/icon_me_collect"
+                    android:text="@string/profile_txt_collect" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/black3" />
+
+                <TextView
+                    android:id="@+id/txt_money_package"
+                    style="@style/list_txt_Style"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/icon_me_money"
+                    android:text="@string/profile_txt_money" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/black3" />
+
+                <TextView
+                    android:id="@+id/txt_smail"
+                    style="@style/list_txt_Style"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/icon_me_smail"
+                    android:text="@string/profile_txt_smail" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/black3" />
+
+                <TextView
+                    android:id="@+id/txt_setting"
+                    style="@style/list_txt_Style"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/icon_me_setting"
+                    android:text="@string/profile_txt_setting" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/black3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

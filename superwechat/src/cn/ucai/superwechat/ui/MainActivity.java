@@ -147,7 +147,7 @@ public class MainActivity extends BaseActivity implements
         mAdapter.addFragment(conversationListFragment, "微信");
         mAdapter.addFragment(contactListFragment, "通讯录");
         mAdapter.addFragment(new DiscoverFragment(), "发现");
-        mAdapter.addFragment(settingFragment, "我");
+        mAdapter.addFragment(new ProfileFragment(), "我");
         mLayoutViewPager.setAdapter(mAdapter);
         mLayoutViewPager.setOnPageChangeListener(this);
         mLayoutTabHost.setChecked(0);

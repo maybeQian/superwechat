@@ -122,7 +122,7 @@ public class User implements Serializable {
 
 	public String getInitialLetter() {
 		if(initialLetter == null){
-			EaseCommonUtils.setAppUserInitialLetter(this);
+//			EaseCommonUtils.setAppUserInitialLetter(this);
 		}
 		return initialLetter;
 	}
