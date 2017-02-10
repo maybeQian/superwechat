@@ -10,7 +10,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
         android:text="@string/app_name_wx"
+        android:textColor="@color/white"
         android:textSize="17sp"
         android:visibility="gone" />
 
@@ -33,6 +35,7 @@
         android:visibility="gone" />
 
     <ImageView
+        android:id="@+id/img_add"
         android:layout_width="40dp"
         android:layout_height="30dp"
         android:layout_alignParentRight="true"
@@ -49,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
         android:text="@string/add_friend"
         android:textSize="16sp"
         android:visibility="gone" />
