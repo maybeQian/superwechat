@@ -16,44 +16,44 @@ package cn.ucai.superwechat.ui;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easemob.redpacketui.utils.RedPacketUtil;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
-
-import cn.ucai.superwechat.Constant;
-import cn.ucai.superwechat.SuperWeChatHelper;
-import cn.ucai.superwechat.SuperWeChatModel;
-import cn.ucai.superwechat.R;
-import cn.ucai.superwechat.utils.MFGT;
-import cn.ucai.superwechat.utils.PreferenceManager;
-
 import com.hyphenate.easeui.widget.EaseSwitchButton;
 import com.hyphenate.util.EMLog;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import cn.ucai.superwechat.R;
+import cn.ucai.superwechat.SuperWeChatHelper;
+import cn.ucai.superwechat.SuperWeChatModel;
+import cn.ucai.superwechat.utils.MFGT;
+import cn.ucai.superwechat.utils.PreferenceManager;
+
 /**
  * settings screen
- *
- *
  */
 @SuppressWarnings({"FieldCanBeLocal"})
 public class SettingsActivity extends BaseActivity implements OnClickListener {
 
+    @BindView(R.id.img_back)
+    ImageView imgBack;
+    @BindView(R.id.txt_title)
+    TextView txtTitle;
     /**
      * new message notification
      */
@@ -123,6 +123,7 @@ public class SettingsActivity extends BaseActivity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.em_fragment_conversation_settings);
+        ButterKnife.bind(this);
         rl_switch_notification = (RelativeLayout) findViewById(R.id.rl_switch_notification);
         rl_switch_sound = (RelativeLayout) findViewById(R.id.rl_switch_sound);
         rl_switch_vibrate = (RelativeLayout) findViewById(R.id.rl_switch_vibrate);
@@ -265,6 +266,10 @@ public class SettingsActivity extends BaseActivity implements OnClickListener {
                 PreferenceManager.getInstance().setCustomAppkey(s.toString());
             }
         });
+
+        imgBack.setVisibility(View.VISIBLE);
+        txtTitle.setVisibility(View.VISIBLE);
+        txtTitle.setText("设置");
     }
 
     @Override
@@ -452,4 +457,8 @@ public class SettingsActivity extends BaseActivity implements OnClickListener {
     }
 
 
+    @OnClick(R.id.img_back)
+    public void onBackClick() {
+        MFGT.finish(this);
+    }
 }

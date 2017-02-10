@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentActivity;
 import cn.ucai.superwechat.R;
 import cn.ucai.superwechat.ui.LoginActivity;
 import cn.ucai.superwechat.ui.RegisterActivity;
+import cn.ucai.superwechat.ui.SettingsActivity;
 import cn.ucai.superwechat.ui.UserProfileActivity;
 
 
@@ -32,18 +33,21 @@ public class MFGT {
     public static void gotoLogin(Activity activity) {
         startActivity(activity, LoginActivity.class);
     }
+
+    public static void gotoLoginClenTask(Activity activity) {
+        startActivity(activity,new Intent(activity,LoginActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
+    }
     public static void gotoRegister(Activity activity) {
         startActivity(activity, RegisterActivity.class);
     }
 
-    public static void gotoUserProfile(Activity activity, String currentUser) {
-        Intent intent = new Intent(activity, UserProfileActivity.class);
-        intent.putExtra("setting", true);
-        intent.putExtra("username", currentUser);
-        startActivity(activity,intent);
+    public static void gotoUserProfile(Activity activity) {
+       startActivity(activity,UserProfileActivity.class);
     }
 
     public static void gotoSetting(Activity activity) {
-//        startActivity(activity,);
+        startActivity(activity, SettingsActivity.class);
     }
+
 }
