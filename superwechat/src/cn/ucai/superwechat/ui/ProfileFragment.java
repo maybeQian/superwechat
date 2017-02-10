@@ -77,7 +77,7 @@ public class ProfileFragment extends Fragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.layout_private_info:
-                MFGT.gotoUserProfile(getActivity(), EMClient.getInstance().getCurrentUser());
+                MFGT.gotoUserProfile(getActivity());
                 break;
             case R.id.txt_money_package:
                 RedPacketUtil.startChangeActivity(getActivity());

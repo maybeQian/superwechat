@@ -5,11 +5,8 @@
     android:background="@color/common_bg"
     android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hyphenate.easeui.widget.EaseTitleBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:titleBarTitle="@string/set"
-        />
+    <include android:id="@+id/layout_title"
+        layout="@layout/view_layout_title"/>
 
     <ScrollView
         android:layout_width="match_parent"

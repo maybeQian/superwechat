@@ -780,7 +780,7 @@ public class SuperWeChatHelper {
 		// To get instance of EaseUser, here we get it from the user list in memory
 		// You'd better cache it if you get it from your server
         User user = null;
-
+        user=getAppContactList().get(username);
         // if user is not in your contacts, set inital letter for him/her
         if(user == null){
             user = new User(username);

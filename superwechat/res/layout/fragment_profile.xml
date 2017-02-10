@@ -33,10 +33,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/iv_avatar"
                     android:text="昵称"
-                    android:textSize="22sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tv_username"
@@ -48,7 +48,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toRightOf="@id/iv_avatar"
                     android:text="微信号"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@color/gray"/>
 
                 <ImageView
