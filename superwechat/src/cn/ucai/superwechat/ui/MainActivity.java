@@ -137,8 +137,7 @@ public class MainActivity extends BaseActivity implements
     private void initFragment() {
         conversationListFragment = new ConversationListFragment();
         contactListFragment = new ContactListFragment();
-        SettingsFragment settingFragment = new SettingsFragment();
-        fragments = new Fragment[]{conversationListFragment, contactListFragment, settingFragment};
+        SettingsActivity settingFragment = new SettingsActivity();
 
 //		getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, conversationListFragment)
 //				.add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(conversationListFragment)

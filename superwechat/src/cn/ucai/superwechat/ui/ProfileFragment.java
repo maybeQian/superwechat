@@ -87,4 +87,5 @@ public class ProfileFragment extends Fragment {
                 break;
         }
     }
+
 }
