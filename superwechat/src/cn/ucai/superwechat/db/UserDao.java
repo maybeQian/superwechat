@@ -130,4 +130,11 @@ public class UserDao {
     public void saveRobotUser(List<RobotUser> robotList) {
         SuperWeChatDBManager.getInstance().saveRobotList(robotList);
     }
+
+    /**
+     * update usernick
+     */
+    public void updateUserNick(String username, String newNick) {
+        SuperWeChatDBManager.getInstance().updateUserNick(username, newNick);
+    }
 }

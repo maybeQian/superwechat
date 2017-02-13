@@ -448,4 +448,18 @@ public class SuperWeChatDBManager {
 		}
 		return users;
 	}
+
+    /**
+     * update usernick
+     * @param username
+     * @param newNick
+     */
+    public void updateUserNick(String username, String newNick) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(UserDao.User_COLUMN_NAME_NICK,newNick);
+        if (db.isOpen()) {
+            db.update(UserDao.User_TABLE_NAME, values, UserDao.User_COLUMN_NAME, new String[]{username});
+        }
+    }
 }
