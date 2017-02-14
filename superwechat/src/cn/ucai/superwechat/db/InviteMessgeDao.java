@@ -26,7 +26,10 @@ public class InviteMessgeDao {
 	static final String COLUMN_NAME_FROM = "username";
 	static final String COLUMN_NAME_GROUP_ID = "groupid";
 	static final String COLUMN_NAME_GROUP_Name = "groupname";
-	
+	static final String COLUMN_NAME_NICKNAME = "nick_name";
+	static final String COLUMN_NAME_AVATAR_SUFFIX = "avatar_suffix";
+	static final String COLUMN_NAME_AVATAR_UPDATE_TIME = "avatar_last_update_time";
+
 	static final String COLUMN_NAME_TIME = "time";
 	static final String COLUMN_NAME_REASON = "reason";
 	public static final String COLUMN_NAME_STATUS = "status";

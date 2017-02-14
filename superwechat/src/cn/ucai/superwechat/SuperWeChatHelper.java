@@ -34,7 +34,10 @@ import cn.ucai.superwechat.db.UserDao;
 import cn.ucai.superwechat.domain.EmojiconExampleGroupData;
 import cn.ucai.superwechat.domain.InviteMessage;
 import cn.ucai.superwechat.domain.InviteMessage.InviteMesageStatus;
+import cn.ucai.superwechat.domain.Result;
 import cn.ucai.superwechat.domain.RobotUser;
+import cn.ucai.superwechat.net.NetDao;
+import cn.ucai.superwechat.net.OnCompleteListener;
 import cn.ucai.superwechat.parse.UserProfileManager;
 import cn.ucai.superwechat.receiver.CallReceiver;
 import cn.ucai.superwechat.ui.ChatActivity;
@@ -42,6 +45,8 @@ import cn.ucai.superwechat.ui.MainActivity;
 import cn.ucai.superwechat.ui.VideoCallActivity;
 import cn.ucai.superwechat.ui.VoiceCallActivity;
 import cn.ucai.superwechat.utils.PreferenceManager;
+import cn.ucai.superwechat.utils.ResultUtils;
+
 import com.hyphenate.easeui.controller.EaseUI;
 import com.hyphenate.easeui.controller.EaseUI.EaseSettingsProvider;
 import com.hyphenate.easeui.controller.EaseUI.EaseUserProfileProvider;
@@ -734,10 +739,33 @@ public class SuperWeChatHelper {
      * save and notify invitation message
      * @param msg
      */
-    private void notifyNewInviteMessage(InviteMessage msg){
-        if(inviteMessgeDao == null){
-            inviteMessgeDao = new InviteMessgeDao(appContext);
-        }
+    private void notifyNewInviteMessage(final InviteMessage msg){
+        NetDao.getUserInfoByUsername(appContext, msg.getFrom(), new OnCompleteListener<String>() {
+            @Override
+            public void onSuccess(String s) {
+                if(inviteMessgeDao == null){
+                    inviteMessgeDao = new InviteMessgeDao(appContext);
+                }
+                if (s != null) {
+                    Result result = ResultUtils.getResultFromJson(s, User.class);
+                    if (result != null) {
+                        User user= (User) result.getRetData();
+                        if (user != null) {
+                            msg.setUsernick(user.getMUserNick());
+                            msg.setAvatarSuffix(user.getMAvatarSuffix());
+                            msg.setAvatarTime(user.getMAvatarLastUpdateTime());
+                        }
+                    }
+                }
+                inviteMessgeDao.saveMessage(msg);
+            }
+
+            @Override
+            public void onError(String error) {
+                inviteMessgeDao.saveMessage(msg);
+            }
+        });
+
         inviteMessgeDao.saveMessage(msg);
         //increase the unread message count
         inviteMessgeDao.saveUnreadMessageCount(1);
