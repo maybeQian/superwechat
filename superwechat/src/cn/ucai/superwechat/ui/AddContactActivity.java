@@ -86,8 +86,6 @@ public class AddContactActivity extends BaseActivity{
 			progressDialog.show();
 
 			searchAppUser(name);
-			// TODO you can search the user from your app server here.
-			
 
 		} 
 	}
@@ -123,58 +121,58 @@ public class AddContactActivity extends BaseActivity{
 		});
 	}
 
-//	/**
-//	 *  add contact
-//	 * @param view
-//	 */
-//	public void addContact(View view){
-//		if(EMClient.getInstance().getCurrentUser().equals(nameText.getText().toString())){
-//			new EaseAlertDialog(this, R.string.not_add_myself).show();
-//			return;
-//		}
-//
-//		if(SuperWeChatHelper.getInstance().getContactList().containsKey(nameText.getText().toString())){
-//		    //let the user know the contact already in your contact list
-//		    if(EMClient.getInstance().contactManager().getBlackListUsernames().contains(nameText.getText().toString())){
-//		        new EaseAlertDialog(this, R.string.user_already_in_contactlist).show();
-//		        return;
-//		    }
-//			new EaseAlertDialog(this, R.string.This_user_is_already_your_friend).show();
-//			return;
-//		}
-//
-//		progressDialog = new ProgressDialog(this);
-//		String stri = getResources().getString(R.string.Is_sending_a_request);
-//		progressDialog.setMessage(stri);
-//		progressDialog.setCanceledOnTouchOutside(false);
-//		progressDialog.show();
-//
-//		new Thread(new Runnable() {
-//			public void run() {
-//
-//				try {
-//					//demo use a hardcode reason here, you need let user to input if you like
-//					String s = getResources().getString(R.string.Add_a_friend);
-//					EMClient.getInstance().contactManager().addContact(toAddUsername, s);
-//					runOnUiThread(new Runnable() {
-//						public void run() {
-//							progressDialog.dismiss();
-//							String s1 = getResources().getString(R.string.send_successful);
-//							Toast.makeText(getApplicationContext(), s1, Toast.LENGTH_LONG).show();
-//						}
-//					});
-//				} catch (final Exception e) {
-//					runOnUiThread(new Runnable() {
-//						public void run() {
-//							progressDialog.dismiss();
-//							String s2 = getResources().getString(R.string.Request_add_buddy_failure);
-//							Toast.makeText(getApplicationContext(), s2 + e.getMessage(), Toast.LENGTH_LONG).show();
-//						}
-//					});
-//				}
-//			}
-//		}).start();
-//	}
+	/**
+	 *  add contact
+	 * @param view
+	 */
+	public void addContact(View view){
+		if(EMClient.getInstance().getCurrentUser().equals(nameText.getText().toString())){
+			new EaseAlertDialog(this, R.string.not_add_myself).show();
+			return;
+		}
+
+		if(SuperWeChatHelper.getInstance().getContactList().containsKey(nameText.getText().toString())){
+		    //let the user know the contact already in your contact list
+		    if(EMClient.getInstance().contactManager().getBlackListUsernames().contains(nameText.getText().toString())){
+		        new EaseAlertDialog(this, R.string.user_already_in_contactlist).show();
+		        return;
+		    }
+			new EaseAlertDialog(this, R.string.This_user_is_already_your_friend).show();
+			return;
+		}
+
+		progressDialog = new ProgressDialog(this);
+		String stri = getResources().getString(R.string.Is_sending_a_request);
+		progressDialog.setMessage(stri);
+		progressDialog.setCanceledOnTouchOutside(false);
+		progressDialog.show();
+
+		new Thread(new Runnable() {
+			public void run() {
+
+				try {
+					//demo use a hardcode reason here, you need let user to input if you like
+					String s = getResources().getString(R.string.Add_a_friend);
+					EMClient.getInstance().contactManager().addContact(toAddUsername, s);
+					runOnUiThread(new Runnable() {
+						public void run() {
+							progressDialog.dismiss();
+							String s1 = getResources().getString(R.string.send_successful);
+							Toast.makeText(getApplicationContext(), s1, Toast.LENGTH_LONG).show();
+						}
+					});
+				} catch (final Exception e) {
+					runOnUiThread(new Runnable() {
+						public void run() {
+							progressDialog.dismiss();
+							String s2 = getResources().getString(R.string.Request_add_buddy_failure);
+							Toast.makeText(getApplicationContext(), s2 + e.getMessage(), Toast.LENGTH_LONG).show();
+						}
+					});
+				}
+			}
+		}).start();
+	}
 	
 	public void back(View v) {
 		finish();

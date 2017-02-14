@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_apply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_layout_title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="请填写申请信息"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/et_apply_msg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+</LinearLayout>
