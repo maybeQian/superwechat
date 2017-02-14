@@ -67,6 +67,11 @@ public class MFGT {
         intent.putExtra("user", user);
         startActivity(activity,intent);
     }
+    public static void gotoFriend(Activity activity, String username) {
+        Intent intent = new Intent(activity, FriendActivity.class);
+        intent.putExtra(I.User.USER_NAME, username);
+        startActivity(activity,intent);
+    }
 
     public static void gotoApply(Activity activity, String userName) {
         startActivity(activity,new Intent(activity, ApplyActivity.class).putExtra(I.User.USER_NAME,userName));

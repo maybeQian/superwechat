@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/ease_mm_listitem_grey"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:id="@+id/layout_invite">
 
     <RelativeLayout
         android:layout_width="match_parent"

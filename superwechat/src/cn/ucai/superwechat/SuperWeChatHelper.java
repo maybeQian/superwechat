@@ -766,7 +766,6 @@ public class SuperWeChatHelper {
             }
         });
 
-        inviteMessgeDao.saveMessage(msg);
         //increase the unread message count
         inviteMessgeDao.saveUnreadMessageCount(1);
         // notify there is new message
