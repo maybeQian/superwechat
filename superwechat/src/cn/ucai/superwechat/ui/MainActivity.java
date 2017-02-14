@@ -461,10 +461,10 @@ public class MainActivity extends BaseActivity implements
     public void updateUnreadLabel() {
         int count = getUnreadMsgCountTotal();
         if (count > 0) {
-            unreadLabel.setText(String.valueOf(count));
-            unreadLabel.setVisibility(View.VISIBLE);
+//            unreadLabel.setText(String.valueOf(count));
+//            unreadLabel.setVisibility(View.VISIBLE);
         } else {
-            unreadLabel.setVisibility(View.INVISIBLE);
+//            unreadLabel.setVisibility(View.INVISIBLE);
         }
     }
 
@@ -475,10 +475,13 @@ public class MainActivity extends BaseActivity implements
         runOnUiThread(new Runnable() {
             public void run() {
                 int count = getUnreadAddressCountTotal();
-                if (count > 0) {
-                    unreadAddressLable.setVisibility(View.VISIBLE);
+                L.e(TAG,"updateUnreadAddressLable, count="+count);
+                if (count > 1) {
+                    mLayoutTabHost.setUnreadCount(1,count);
+                } else if (count == 1) {
+                    mLayoutTabHost.setHasNew(1, true);
                 } else {
-                    unreadAddressLable.setVisibility(View.INVISIBLE);
+                    mLayoutTabHost.setHasNew(1,false);
                 }
             }
         });
@@ -520,7 +523,7 @@ public class MainActivity extends BaseActivity implements
 
         if (!isConflict && !isCurrentAccountRemoved) {
 //            updateUnreadLabel();
-//            updateUnreadAddressLable();
+            updateUnreadAddressLable();
         }
 
         // unregister this event listener when this activity enters the
