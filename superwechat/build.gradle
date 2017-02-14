@@ -28,7 +28,7 @@ android {
         targetSdkVersion 24
         multiDexEnabled true
     }
-// 适配所有类型的API
+    // 适配所有类型的API
     configurations {
         all*.exclude group: 'com.android.support', module: 'support-v4'
         all*.exclude group: 'com.android.support', module: 'support-annotations'
