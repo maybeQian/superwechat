@@ -19,6 +19,7 @@ import com.hyphenate.easeui.R;
 import com.hyphenate.easeui.domain.User;
 import com.hyphenate.easeui.utils.EaseUserUtils;
 import com.hyphenate.util.EMLog;
+import com.hyphenate.util.HanziToPinyin;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -23,7 +23,7 @@ public abstract class EaseBaseFragment extends Fragment{
         
         initView();
         setUpView();
-        hideTitleBar();
+//        hideTitleBar();
     }
     
     public void showTitleBar(){
