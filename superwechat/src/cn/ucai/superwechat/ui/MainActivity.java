@@ -458,6 +458,7 @@ public class MainActivity extends BaseActivity implements
      */
     public void updateUnreadLabel() {
         int count = getUnreadMsgCountTotal();
+        L.e(TAG,"updateUnreadLabel,count="+count);
         mLayoutTabHost.setUnreadCount(0,count);
     }
 
