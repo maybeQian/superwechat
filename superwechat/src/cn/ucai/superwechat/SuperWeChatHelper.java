@@ -1236,7 +1236,35 @@ public class SuperWeChatHelper {
        }
        
        isSyncingContactsWithServer = true;
-       
+       if (isLoggedIn()) {
+           NetDao.loadContactList(appContext, EMClient.getInstance().getCurrentUser(), new OnCompleteListener<String>() {
+               @Override
+               public void onSuccess(String s) {
+                   if (s != null) {
+                       Result result = ResultUtils.getListResultFromJson(s, User.class);
+                       if (result != null && result.isRetMsg()) {
+                           List<User> list = (List<User>) result.getRetData();
+                           Map<String, User> userMap = new HashMap<String, User>();
+                           for (User u : list) {
+                               EaseCommonUtils.setUserInitialLetter(u);
+                               userMap.put(u.getMUserName(), u);
+                           }
+                           // save the contact list to cache
+                           getAppContactList().clear();
+                           getAppContactList().putAll(userMap);
+                           // save the contact list to database
+                           UserDao dao = new UserDao(appContext);
+                           dao.saveAppContactList(list);
+                       }
+                   }
+               }
+
+               @Override
+               public void onError(String error) {
+
+               }
+           });
+       }
        new Thread(){
            @Override
            public void run(){
@@ -1250,33 +1278,7 @@ public class SuperWeChatHelper {
                        notifyContactsSyncListener(false);
                        return;
                    }
-                  NetDao.loadContactList(appContext, EMClient.getInstance().getCurrentUser(), new OnCompleteListener<String>() {
-                      @Override
-                      public void onSuccess(String s) {
-                          if (s != null) {
-                              Result result = ResultUtils.getListResultFromJson(s, User.class);
-                              if (result != null && result.isRetMsg()) {
-                                  List<User> list= (List<User>) result.getRetData();
-                                  Map<String, User> userMap = new HashMap<String, User>();
-                                  for (User u : list) {
-                                      EaseCommonUtils.setUserInitialLetter(u);
-                                      userMap.put(username, u);
-                                  }
-                                  // save the contact list to cache
-                                  getAppContactList().clear();
-                                  getAppContactList().putAll(userMap);
-                                  // save the contact list to database
-                                  UserDao dao = new UserDao(appContext);
-                                  dao.saveAppContactList(list);
-                              }
-                          }
-                      }
 
-                      @Override
-                      public void onError(String error) {
-
-                      }
-                  });
                    Map<String, EaseUser> userlist = new HashMap<String, EaseUser>();
                    for (String username : usernames) {
                        EaseUser user = new EaseUser(username);

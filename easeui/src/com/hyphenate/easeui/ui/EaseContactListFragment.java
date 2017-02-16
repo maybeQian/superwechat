@@ -62,7 +62,7 @@ public class EaseContactListFragment extends EaseBaseFragment {
     protected ImageButton clearSearch;
     protected EditText query;
     protected Handler handler = new Handler();
-    protected EaseUser toBeProcessUser;
+    protected User toBeProcessUser;
     protected String toBeProcessUsername;
     protected EaseContactList contactListLayout;
     protected boolean isConflict;
