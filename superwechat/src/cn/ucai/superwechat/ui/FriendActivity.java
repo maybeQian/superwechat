@@ -132,7 +132,7 @@ public class FriendActivity extends BaseActivity {
                 MFGT.gotoApply(this,user.getMUserName());
                 break;
             case R.id.btn_send_message:
-                MFGT.gotoChat(this, user.getMUserNick());
+                MFGT.gotoChat(this, user.getMUserName());
                 break;
             case R.id.btn_video_call:
                 startActivity(new Intent(this, VideoCallActivity.class).putExtra("username", user.getMUserName())
