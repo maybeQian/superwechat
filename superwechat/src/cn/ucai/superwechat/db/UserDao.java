@@ -90,7 +90,7 @@ public class UserDao {
     }
 
     public void deleteAppContact(String username) {
-        SuperWeChatDBManager.getInstance().deleteContact(username);
+        SuperWeChatDBManager.getInstance().deleteAppContact(username);
     }
 
     /**
