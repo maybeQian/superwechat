@@ -75,7 +75,7 @@
     <LinearLayout
         android:id="@+id/layout_icon_group"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -94,11 +94,12 @@
 
         <ImageView
             android:id="@+id/iv_icon_group"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/ease_group_icon"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="6dp"
+            android:layout_weight="0"
             />
 
     </LinearLayout>

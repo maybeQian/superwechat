@@ -208,4 +208,10 @@ public interface I {
 	String REQUEST_UPDATE_LOCATION 					= 		"updateLocation";
 	/** 客户端发送的分页下载附近的人的请求 */
 	String REQUEST_DOWNLOAD_LOCATION 				= 		"downloadLocation";
+
+	int REQUESTCODE_PICK = 1;
+	int REQUESTCODE_CUTTING = 2;
+	int REQUESTCODE_MEMORY=3;
 }
+
+
