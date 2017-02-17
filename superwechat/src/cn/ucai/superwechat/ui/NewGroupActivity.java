@@ -279,7 +279,7 @@ public class NewGroupActivity extends BaseActivity {
             Bitmap bitmap = extras.getParcelable("data");
             Drawable drawable = new BitmapDrawable(getResources(), bitmap);
             ivGroupIcon.setImageDrawable(drawable);
-            String imagePath = EaseImageUtils.getImagePath(EMClient.getInstance().getCurrentUser() + I.AVATAR_SUFFIX_PNG);
+            String imagePath = EaseImageUtils.getImagePath(EMClient.getInstance().getCurrentUser() + I.AVATAR_SUFFIX_JPG);
             file = new File(imagePath);
             L.e("file path="+file.getAbsolutePath());
             try {
