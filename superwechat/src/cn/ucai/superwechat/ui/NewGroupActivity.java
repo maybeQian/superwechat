@@ -15,6 +15,7 @@ package cn.ucai.superwechat.ui;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -29,11 +30,24 @@ import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMGroup;
 import com.hyphenate.chat.EMGroupManager.EMGroupOptions;
 import com.hyphenate.chat.EMGroupManager.EMGroupStyle;
+
+import cn.ucai.superwechat.I;
 import cn.ucai.superwechat.R;
+import cn.ucai.superwechat.domain.Result;
+import cn.ucai.superwechat.net.NetDao;
+import cn.ucai.superwechat.net.OnCompleteListener;
+import cn.ucai.superwechat.utils.CommonUtils;
+import cn.ucai.superwechat.utils.L;
+import cn.ucai.superwechat.utils.ResultUtils;
+
+import com.hyphenate.easeui.domain.Group;
 import com.hyphenate.easeui.widget.EaseAlertDialog;
 import com.hyphenate.exceptions.HyphenateException;
 
+import java.io.File;
+
 public class NewGroupActivity extends BaseActivity {
+	private static final String TAG = "NewGroupActivity";
 	private EditText groupNameEditText;
 	private ProgressDialog progressDialog;
 	private EditText introductionEditText;
@@ -109,14 +123,7 @@ public class NewGroupActivity extends BaseActivity {
 						}
 						EMGroup group = EMClient.getInstance().groupManager().createGroup(groupName, desc, members, reason, option);
 						String hxid = group.getGroupId();
-//						createAppGroup();
-						runOnUiThread(new Runnable() {
-							public void run() {
-								progressDialog.dismiss();
-								setResult(RESULT_OK);
-								finish();
-							}
-						});
+						createAppGroup(group);
 					} catch (final HyphenateException e) {
 						runOnUiThread(new Runnable() {
 							public void run() {
@@ -129,6 +136,49 @@ public class NewGroupActivity extends BaseActivity {
 				}
 			}).start();
 		}
+	}
+
+	private void createAppGroup(EMGroup group) {
+		File file=null;
+		NetDao.createGroup(this, group, file, new OnCompleteListener<String>() {
+			@Override
+			public void onSuccess(String s) {
+				L.e(TAG,"createAppGroup....s="+s);
+				if (s != null) {
+					Result result = ResultUtils.getResultFromJson(s, Group.class);
+					if (result != null) {
+						if (result.isRetMsg()) {
+							createGroupSuccess();
+						} else {
+							progressDialog.dismiss();
+							if (result.getRetCode() == I.MSG_GROUP_HXID_EXISTS) {
+								CommonUtils.showShortToast("群组环信ID已经存在");
+							} else if (result.getRetCode() == I.MSG_GROUP_CREATE_FAIL) {
+								CommonUtils.showShortToast(R.string.Failed_to_create_groups);
+							}
+						}
+					}
+				}
+			}
+
+			@Override
+			public void onError(String error) {
+				progressDialog.dismiss();
+				L.e(TAG,"createAppGroup...error="+error);
+				CommonUtils.showShortToast(R.string.Failed_to_create_groups);
+			}
+		});
+	}
+
+	private void createGroupSuccess() {
+		runOnUiThread(new Runnable() {
+            public void run() {
+                progressDialog.dismiss();
+                setResult(RESULT_OK);
+				CommonUtils.showShortToast("创建群组成功");
+                finish();
+            }
+        });
 	}
 
 	public void back(View view) {

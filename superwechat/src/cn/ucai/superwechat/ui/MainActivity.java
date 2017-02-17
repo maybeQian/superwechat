@@ -516,7 +516,7 @@ public class MainActivity extends BaseActivity implements
         super.onResume();
 
         if (!isConflict && !isCurrentAccountRemoved) {
-//            updateUnreadLabel();
+            updateUnreadLabel();
             updateUnreadAddressLable();
         }
 
