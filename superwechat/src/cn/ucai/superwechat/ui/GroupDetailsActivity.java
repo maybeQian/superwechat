@@ -55,7 +55,9 @@ import com.hyphenate.exceptions.HyphenateException;
 import com.hyphenate.util.EMLog;
 import com.hyphenate.util.NetUtils;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class GroupDetailsActivity extends BaseActivity implements OnClickListener {
@@ -402,6 +404,17 @@ public class GroupDetailsActivity extends BaseActivity implements OnClickListene
 	 */
 	private void addMembersToGroup(final String[] newmembers) {
 		final String st6 = getResources().getString(R.string.Add_group_members_fail);
+		NetDao.addGroupMembers(this, getGroupMembers(newmembers), groupId, new OnCompleteListener<String>() {
+			@Override
+			public void onSuccess(String result) {
+				L.e(TAG,"addMembersToGroup,result="+result);
+			}
+
+			@Override
+			public void onError(String error) {
+
+			}
+		});
 		new Thread(new Runnable() {
 			
 			public void run() {
@@ -432,7 +445,16 @@ public class GroupDetailsActivity extends BaseActivity implements OnClickListene
 			}
 		}).start();
 	}
-
+	private String getGroupMembers(String[] members) {
+		String membersStr = "";
+		if (members.length > 0) {
+			for (String s : members) {
+				membersStr += s + ",";
+			}
+		}
+		L.e(TAG,"getGroupMembers, membersStr="+membersStr);
+		return membersStr;
+	}
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
