@@ -411,4 +411,10 @@ public class UserProfileActivity extends BaseActivity implements OnClickListener
                     }
                 }).setNegativeButton(R.string.dl_cancel, null).show();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        asyncFetchUserInfo(EMClient.getInstance().getCurrentUser());
+    }
 }

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 
+import com.hyphenate.chat.EMClient;
 import com.hyphenate.easeui.domain.User;
 
 import cn.ucai.superwechat.I;
@@ -69,9 +70,13 @@ public class MFGT {
         startActivity(activity,intent);
     }
     public static void gotoFriend(Activity activity, String username) {
-        Intent intent = new Intent(activity, FriendActivity.class);
-        intent.putExtra(I.User.USER_NAME, username);
-        startActivity(activity,intent);
+        if (username.equals(EMClient.getInstance().getCurrentUser())) {
+            gotoUserProfile(activity);
+        } else {
+            Intent intent = new Intent(activity, FriendActivity.class);
+            intent.putExtra(I.User.USER_NAME, username);
+            startActivity(activity,intent);
+        }
     }
 
     public static void gotoApply(Activity activity, String userName) {
