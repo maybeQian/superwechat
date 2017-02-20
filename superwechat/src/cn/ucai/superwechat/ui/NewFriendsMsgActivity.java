@@ -62,7 +62,7 @@ public class NewFriendsMsgActivity extends BaseActivity {
     private void initView() {
         imgBack.setVisibility(View.VISIBLE);
         txtTitle.setVisibility(View.VISIBLE);
-        txtTitle.setText("申请与通知");
+        txtTitle.setText("新的朋友");
         txtRight.setVisibility(View.VISIBLE);
     }
 

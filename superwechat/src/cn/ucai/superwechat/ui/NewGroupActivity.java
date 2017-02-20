@@ -185,7 +185,7 @@ public class NewGroupActivity extends BaseActivity {
                     Result result = ResultUtils.getResultFromJson(s, Group.class);
                     if (result != null) {
                         if (result.isRetMsg()) {
-                            if (members.length > 1) {
+                            if (members!=null && members.length > 0) {
                                 addGroupMembers(group,members);
                             } else {
                                 createGroupSuccess();
